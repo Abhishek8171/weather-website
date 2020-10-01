@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
- <title>About the website</title>   
- <link rel="icon"  href="/img/shinchan.jpg">
+    <link rel="icon"  href="/img/shinchan.jpg">
+    <link  rel ="stylesheet"  href="/CSS/style.css">
 
-<link  rel ="stylesheet"  href="/CSS/style.css">
 
-<script src="/js/app.js"></script>
+
+<style> 
+html { 
+  background: url(/img/paris.jpg) no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body { 
+  color: white; 
+}
+</style>
+
+
 </head>
 
+
 <body>
-    
-    {{>header}}
+ {{>header}}
+<h1>About Me </h1>
+<p>Hi My name is Abhishek Jain.I am from India I live in small town Modinagar.I am starting Learning web-developnment this is my first website which helps in weather forecast .  I completed computer science from SRM insititue of science and technology .I last want to thank you using my site hopefully it will benifit you  !</p>
 
-    <h2>{{title}}</h2>
+<script src="/js/app.js"></script>
 
-    <p>This site is created by Abhishek Jain</p>>
-    
-    <img  class ="portrait" src="/img/weather3.jpg">
-    
-    <h1> {{name}}</h1>
-   
-   
-    
+
 </body>
-
-
 </html>

@@ -11,13 +11,13 @@ request({url,json:true},(error,{body})=>{
 else if(body.error)
 {
 
-callback('Error hai bhai jhan ',undefined)
+callback('Something went wrong !',undefined)
 
 }
 
 else{
 
-    callback(undefined,'current temperature is '+body.current .temperature +' ' + 'but it is feel like '+body.current.feelslike)
+    callback(undefined,'Current temperature is '+body.current .temperature +' ' + ' Celicius but it is feel like '+body.current.feelslike +' '+'Celcius')
     
 }
 
